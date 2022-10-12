@@ -23,21 +23,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
-html {
-    height: 100%;
-    position: relative;
-  }
-
 body{
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 /* aca inicia el header */
 header{   
@@ -102,7 +96,7 @@ header{
 }
 
 .navbar a{
-    position: relative;
+      position: relative;
       text-transform: uppercase;
       padding: 6px 20px;
       margin: 0 5px;
@@ -160,11 +154,11 @@ header{
 }
 /* aca termina el navbar */
 
-/* aca empiza el main */
+/* aca empieza el main */
 .hero-image{
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     background:linear-gradient(rgba(227, 23, 38, 0.8), rgba(227, 23, 38, 0.8)), url(https://res.cloudinary.com/axiever/image/upload/v1665354353/hero-img_lyeejz.jpg) no-repeat center;
     background-size: cover;
@@ -179,4 +173,154 @@ header{
     font-family: 'Altero Regular';
     text-transform: lowercase;
     color: white;
+}
+
+.hero-text p{
+    padding: 10px;
+}
+
+.hero-text h2{
+    padding: 10px;
+}
+
+.small-galery{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.small-galery-text{
+    width: 80%;
+    padding: 10px;
+}
+
+.small-galery-text p{
+    line-height: 0.7;
+    letter-spacing: 1px;    
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+    font-size: 40px;
+    color: rgba(227,23,38,1);
+    padding-bottom: 10px;
+}
+
+.small-galery-text i{
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-family: 'Bon Vivant';
+    font-weight: 400;
+    font-size: 34px;
+    color: rgba(227,23,38,1);
+}
+
+.small-galery-text span{
+    color: rgba(96,96,96,1);
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+.small-galery-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.small-galery-items img{
+    width: 260px;
+    margin:20px 20px;
+    height: auto;
+    box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.75);
+}
+
+.small-galery-items img:hover{
+    background:linear-gradient(rgba(232, 60, 75, 0.8), rgba(232, 60, 75, 0.8))
+}
+
+.btn-small-galery{
+    background-color: rgba(255,207,230,1);
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.small-galery .btn{  
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Raleway';
+    color: rgba(227,23,38,1);
+    text-decoration: none;
+}
+
+.btn-small-galery:hover{
+    background-color: rgb(255, 143, 197);
+}
+
+.more-options{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.option-one, .option-two{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.option-one{
+    background-color: rgba(255,207,230,1);
+}
+
+.option-two{
+   background-color: rgb(255, 143, 197);
+}
+
+.option-one a, .option-two a{
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+}
+
+.option-one h2, .option-two h2{
+    color: rgba(227,23,38,1);
+    text-transform: lowercase;
+    line-height: 0.7;
+    letter-spacing: 0em;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.option-one p, .option-two p{
+    color: rgba(227,23,38,1);
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding: 10px;
 }
