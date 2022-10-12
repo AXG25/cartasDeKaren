@@ -301,6 +301,10 @@ header{
     width: 200px;
 }
 
+.option-one i, .option-two i{
+    color: rgba(227,23,38,1);
+}
+
 .option-one h2, .option-two h2{
     color: rgba(227,23,38,1);
     text-transform: lowercase;
