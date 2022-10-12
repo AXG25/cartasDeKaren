@@ -170,9 +170,12 @@ header{
 
 .hero-text{
     width: 280px;
-    font-family: 'Altero Regular';
-    text-transform: lowercase;
+    font-family: 'Raleway';
+    text-transform: uppercase;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text p{
@@ -249,13 +252,15 @@ header{
     background:linear-gradient(rgba(232, 60, 75, 0.8), rgba(232, 60, 75, 0.8))
 }
 
-.btn-small-galery{
+.button{
     background-color: rgba(255,207,230,1);
     padding: 5px 10px;
+    width: 155px;
+    height: 30px;
     margin-top: 20px;
 }
 
-.small-galery .btn{  
+.button .btn{  
     text-transform: uppercase;
     line-height: 1.4;
     letter-spacing: 0.2em;
@@ -266,7 +271,7 @@ header{
     text-decoration: none;
 }
 
-.btn-small-galery:hover{
+.button:hover{
     background-color: rgb(255, 143, 197);
 }
 
