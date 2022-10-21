@@ -105,7 +105,6 @@ header {
     font-weight: 600;
     transition: .5s;
     z-index: 1;
-
 }
 
 .navbar a::before {
@@ -397,9 +396,21 @@ header {
   
   .carrusel-items {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     padding: 40px 40px;
+  }
+
+  ::-webkit-scrollbar{
+    width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: #ffffff00;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: linear-gradient(to top, rgba(227, 23, 38, 1), rgba(227, 23, 38, 1))
   }
   
   .carrusel-item {
@@ -432,14 +443,15 @@ header {
 }
 
 .navbar-footer a {
+    position: relative;
     text-transform: uppercase;
-    padding: 6px 10px;
+    padding: 6px 20px;
     margin: 0 5px;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Raleway';
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 600;    transition: .5s;
 }
 
   .redes{

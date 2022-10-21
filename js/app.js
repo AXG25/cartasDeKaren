@@ -27,3 +27,5 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
+
+
