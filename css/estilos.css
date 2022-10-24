@@ -264,9 +264,8 @@ header {
 
 .small-galery-items img {
     width: 260px;
+    height: 260px;
     margin: 20px 20px;
-    height: auto;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 .small-galery-items img:hover {
@@ -274,11 +273,9 @@ header {
 }
 
 .button {
-    background-color: rgb(255, 143, 197);
-    padding: 5px 10px;
-    width: 155px;
-    height: 30px;
-    margin-top: 20px;
+    background-color: rgba(255, 207, 230, 1);
+    padding: 10px 15px;
+    margin-top: 10px;
 }
 
 .button .btn {
@@ -293,7 +290,7 @@ header {
 }
 
 .button:hover {
-    background-color: rgba(255, 207, 230, 1) ;
+    background-color:  rgb(255, 143, 197);
 }
 
 .more-options {
@@ -512,7 +509,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(255, 207, 230, 1);
+    background-color: rgb(255, 203, 228);
     padding: 20px;
 }
 
@@ -615,7 +612,7 @@ header {
 
 
 .scustoms-collections p {
-    margin-top: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
     line-height: 2;
     letter-spacing: 0.3em;
@@ -626,7 +623,7 @@ header {
 }
 
 .scustoms-collections span {
-    margin-top: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
     line-height: 2;
     letter-spacing: 0.3em;
@@ -635,3 +632,105 @@ header {
     font-weight: 600;
     color: rgb(0, 0, 0);
 }
+
+.side-cart {
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 98%;
+    width: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .side-cart-header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .side-cart p{
+    line-height: 0.7;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+    font-size: 40px;
+    color: rgba(227, 23, 38, 1);
+    margin: 5px;
+  }
+ 
+  .side-cart span{
+    line-height: 0.7;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 30px;
+    color: rgba(227, 23, 38, 1);
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  hr{
+    background-color: rgba(227, 23, 38, 1);
+    width: 80%;
+  }
+
+ .producto-sideCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+ }
+
+ .producto-sideCart img{
+    width: 50px;
+    height: 50px;
+ }
+
+ .producto-sideCart p{
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+ }
+
+ .total{
+    background-color: rgba(227, 23, 38, 1);
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .total p{
+    color:#ffffff;
+    font-size: 30px;
+ }
+
+ .total span{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Bon Vivant';
+    font-style: normal;
+ }
+  
+  

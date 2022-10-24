@@ -28,10 +28,26 @@
               <span>materializamos tus ideas en tarjetas</span>
             </a>
           </div>
+
+          <div id="sideCart" class="side-cart">
+            <div class="side-cart-header">
+                <p>Carrito</p>
+                <span class="closebtn" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <hr>
+            <div id="sideCart-container"></div>
+
+            <div class="total">
+              <p> total a pagar: <span id="precio"></span> </p>
+            </div>
+          </div>
+          
     
-          <div class="carrito">
+          <div id="verCarrito" class="carrito" onclick="openCart()">
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
+
+
     
         </div>
     
@@ -61,7 +77,7 @@
         <div id="scutomsCollections" class="scustoms-collections">
             <div class="texto">
                 <h2>chose your <i>suite</i></h2>
-        </div>
+         </div>
     </main>
 
     <footer>
