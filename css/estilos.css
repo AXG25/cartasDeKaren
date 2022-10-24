@@ -568,6 +568,7 @@ header {
 
 .scustoms-collections .texto{
     width: 280px;
+    height: 280px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -621,5 +622,16 @@ header {
     font-family: 'Raleway';
     font-size: 12px;
     font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.scustoms-collections span {
+    margin-top: 20px;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    font-family: 'Raleway';
+    font-size: 8px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
 }
