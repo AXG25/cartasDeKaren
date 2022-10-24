@@ -42,9 +42,19 @@ header {
     padding-top: 20px;
 }
 
+.header-container{
+    display: flex;
+    width: 100%;
+    }
+
 .logo {
+    width: 90%;
     text-align: center;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
 }
 
 .logo a {
@@ -76,6 +86,14 @@ header {
     font-family: 'Raleway';
     font-size: 8px;
     font-weight: 900;
+}
+
+.carrito{
+    color: rgba(227, 23, 38, 1);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* aca termina el header */
@@ -252,7 +270,7 @@ header {
 }
 
 .button {
-    background-color: rgba(255, 207, 230, 1);
+    background-color: rgb(255, 143, 197);
     padding: 5px 10px;
     width: 155px;
     height: 30px;
@@ -271,7 +289,7 @@ header {
 }
 
 .button:hover {
-    background-color: rgb(255, 143, 197);
+    background-color: rgba(255, 207, 230, 1) ;
 }
 
 .more-options {
@@ -400,18 +418,6 @@ header {
     overflow-y: hidden;
     padding: 40px 40px;
   }
-
-  ::-webkit-scrollbar{
-    width: 1rem;
-  }
-
-  ::-webkit-scrollbar-track{
-    background-color: #ffffff00;
-  }
-
-  ::-webkit-scrollbar-thumb{
-    background-color: linear-gradient(to top, rgba(227, 23, 38, 1), rgba(227, 23, 38, 1))
-  }
   
   .carrusel-item {
     min-width: 230px;
@@ -493,3 +499,123 @@ header {
     font-weight: 400;
 }
 
+
+.card-scustoms{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 207, 230, 1);
+    padding: 20px;
+}
+
+.card-scustoms a{
+    text-decoration: none;
+    text-align: center;
+    width: 280px;
+}
+
+.card-scustoms span{
+    color:rgba(227, 23, 38, 1); ;
+}
+.card-scustoms i {
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-family: 'Bon Vivant';
+    font-weight: 400;
+    font-size: 40px;
+    color: rgba(227, 23, 38, 1);
+}
+
+.card-scustoms h2{
+    color: rgba(227, 23, 38, 1);
+    text-transform: lowercase;
+    line-height: 0.7;
+    letter-spacing: 0em;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.card-scustoms p{
+    color: rgba(227, 23, 38, 1);
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.scustoms-collections{
+    padding: 40px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.scustoms-collections .texto{
+    width: 280px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto i {
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-family: 'Bon Vivant';
+    font-weight: 400;
+    font-size: 42px;
+    color: rgba(227, 23, 38, 1);
+}
+
+.texto h2{
+    color: rgba(227, 23, 38, 1);
+    text-transform: lowercase;
+    line-height: 0.7;
+    letter-spacing: 0em;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.scustoms-collections .producto{
+    width: 280px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scustoms-collections img{
+    width: 260px;
+    height: 260px;
+}
+
+
+.scustoms-collections p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
