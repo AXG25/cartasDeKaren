@@ -34,7 +34,6 @@ productos.forEach((producto) => {
 
 verCarrito.addEventListener("click", () => {
   sideCartContainer.innerHTML = "";
-//recorre el carrito con for  y muestra los productos 
   for (let i = 0; i < carrito.length; i++) {
     let productoSideCart = document.createElement("div");
     productoSideCart.className = "producto-sideCart";
