@@ -30,7 +30,6 @@
 body {
     width: 100%;
     overflow-x: hidden;
-    
 }
 
 /* aca inicia el header */
@@ -736,23 +735,24 @@ header {
     margin: 0px 10px;
  }
 
- .total{
+ .total-compra{
     background-color: rgba(227, 23, 38, 1);
     width: 100%;
     padding: 20px;
     bottom: 0;
+    left: 0;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
  }
 
- .total p{
+ .total-compra p{
     color:#ffffff;
     font-size: 30px;
  }
 
- .total span{
+ .total-compra span{
     font-size: 30px;
     color: #ffffff;
     font-family: 'Bon Vivant';
