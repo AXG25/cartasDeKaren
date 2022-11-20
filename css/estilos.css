@@ -23,11 +23,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    max-width: 1263px;
+    margin: 0 auto;
 }
 
 body {
     width: 100%;
     overflow-x: hidden;
+    
 }
 
 /* aca inicia el header */
@@ -97,6 +100,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contador-carrito{
+    background-color: rgba(227, 23, 38, 1);
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 900;
+    margin-left: 17px;
+    margin-top: -30px;
 }
 
 /* aca termina el header */
@@ -641,7 +659,6 @@ header {
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
     z-index: 1;
     top: 0;
     right: 0;
@@ -654,6 +671,7 @@ header {
 
   .side-cart-header{
     display: flex;
+    margin: 0px auto;
     justify-content: space-between;
     width: 80%;
   }
@@ -684,6 +702,7 @@ header {
   hr{
     background-color: rgba(227, 23, 38, 1);
     width: 80%;
+    margin: 0px auto;
   }
 
  .producto-sideCart{
@@ -692,12 +711,13 @@ header {
     justify-content: space-around;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding:20px 0px;
  }
 
  .producto-sideCart img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
  }
 
  .producto-sideCart p{
@@ -705,9 +725,15 @@ header {
     line-height: 2;
     letter-spacing: 0.3em;
     font-family: 'Raleway';
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     color: rgb(0, 0, 0);
+    margin: 0px 10px;
+ }
+
+ .btn-eliminar i{
+    font-size: 18px;
+    margin: 0px 10px;
  }
 
  .total{
