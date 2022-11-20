@@ -10,7 +10,7 @@ const pintarCarrito = () => {
     productoSideCart.innerHTML = `
         <img src="${carrito[i].img}">
         <p>${carrito[i].nombre}</p>
-        <p>${carrito[i].precio} $</p>
+        <p>${carrito[i].precio * carrito[i].cantidad} $</p>
         <p id="restar" class="pointer"> - </p>
         <p>${carrito[i].cantidad}</p>
         <p id="sumar" class="pointer"> + </p>
