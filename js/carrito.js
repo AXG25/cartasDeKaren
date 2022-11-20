@@ -11,11 +11,32 @@ const pintarCarrito = () => {
         <img src="${carrito[i].img}">
         <p>${carrito[i].nombre}</p>
         <p>${carrito[i].precio} $</p>
-        <p>cant: ${carrito[i].cantidad}</p>
+        <p id="restar" class="pointer"> - </p>
+        <p>${carrito[i].cantidad}</p>
+        <p id="sumar" class="pointer"> + </p>
         `;
 
     // lo enchuflamos al html LN-39
     sideCartContainer.append(productoSideCart);
+
+    let restarProducto = productoSideCart.querySelector("#restar");
+    restarProducto.addEventListener("click", () => {
+      carrito[i].cantidad--;
+      if (carrito[i].cantidad === 0) {
+        carrito.splice(i, 1);
+      }
+      pintarCarrito();
+      cantidadCarrito();
+      guardarCarrito();
+    });
+
+    let sumarProducto = productoSideCart.querySelector("#sumar");
+    sumarProducto.addEventListener("click", () => {
+      carrito[i].cantidad++;
+      pintarCarrito();
+      cantidadCarrito();
+      guardarCarrito();
+    });
 
     // creamos el boton de eliminar
     let btnEliminar = document.createElement("span");
