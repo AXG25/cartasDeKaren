@@ -47,7 +47,7 @@ const pintarCarrito = () => {
   
   // funcion que abre el carrito
   function openCart() {
-    document.getElementById("sideCart").style.width = "340px";
+    document.getElementById("sideCart").style.width = "380px";
   }
   
   // funcion que cierra el carrito
