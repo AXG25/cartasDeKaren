@@ -47,20 +47,20 @@ const pintarCarrito = () => {
     // le damos funcionalidad al boton de eliminar
     btnEliminar.addEventListener("click", eliminarProducto);
 
+  // crea una funcion para vaciar todo el carrito con un solo boton
+  
+ 
     // funcion que nos muestra el total de la compra
     const total = carrito.reduce(
        (acc, item) => acc + item.precio * item.cantidad,
       0
      );
 
-    
-    
-
     let totalCompra = document.createElement("div");
     totalCompra.className = "total-compra";
     totalCompra.innerHTML = `
         <p>Total a pagar: <span>${total} $</span></p>
-        `;
+        `;     
     sideCartContainer.append(totalCompra);
   
 
@@ -73,6 +73,7 @@ const pintarCarrito = () => {
     }
   }
 };
+
 
 // funcion que abre el carrito
 function openCart() {
@@ -100,3 +101,11 @@ const cantidadCarrito = () => {
 };
 
 cantidadCarrito();
+
+// funcion que borra todo el carrito
+function vaciarCarrito() {
+  carrito = [];
+  pintarCarrito();
+  cantidadCarrito();
+  guardarCarrito();
+}

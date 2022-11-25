@@ -692,7 +692,7 @@ header {
     text-align: center;
     font-family: 'Raleway';
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(227, 23, 38, 1);
     margin: 5px;
     cursor: pointer;
@@ -707,7 +707,7 @@ header {
  .producto-sideCart{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     width: 100%;
     padding:20px 0px;
