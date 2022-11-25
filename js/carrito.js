@@ -68,7 +68,7 @@ const pintarCarrito = () => {
 
     // creamos la funcion para eliminar solo el producto que se le dio click
     function eliminarProducto() {
-
+      //notificacion bonita
       Toastify({
         text: "Producto eliminado",
         duration: 2000,
@@ -119,8 +119,22 @@ cantidadCarrito();
 
 // funcion que borra todo el carrito
 function vaciarCarrito() {
-  carrito = [];
-  pintarCarrito();
-  cantidadCarrito();
-  guardarCarrito();
+  Swal.fire({
+    title: 'Vaciar carrito',
+    text: `¿Esta segur@ de que quiere vaciar el carrito?
+    Perdera todos los productos añadidos`,
+    icon: 'question',
+    iconColor:'rgba(227, 23, 38, 1)',
+    iconHtml: '<i class="fa-solid fa-question"></i>',
+    showCancelButton: true,
+    cancelButtonText:'Cancelar',
+    confirmButtonText: 'Vaciar'
+  }).then((result) => {
+    if (result.isConfirmed){
+      carrito = [];
+      pintarCarrito();
+      cantidadCarrito();
+      guardarCarrito();
+    }
+  })
 }

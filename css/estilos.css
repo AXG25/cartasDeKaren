@@ -779,3 +779,55 @@ header {
     cursor: pointer;
 }
 
+.swal2-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.swal2-popup{
+    border-radius: 0px !important;
+} 
+
+.swal2-title {
+    font-family: 'Reikna Regular' !important;
+    font-weight: 500 !important;
+    font-size: 40px !important;
+    text-transform: uppercase !important;
+    color: rgba(227, 23, 38, 1) !important;
+}
+
+.swal2-html-container{
+    font-family: 'Raleway'!important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.swal2-confirm{
+    background-color: rgba(227, 23, 38, 1) !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    font-family: 'Raleway' !important; 
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
+}
+
+.swal2-cancel{
+    background-color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: 'Raleway' !important;
+    font-weight: 700 !important;
+    color: rgba(227, 23, 38, 1) !important;
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
+    border-style: solid  !important;
+    border-color: rgba(227, 23, 38, 1) !important;
+    border-width: 1px !important;
+}
