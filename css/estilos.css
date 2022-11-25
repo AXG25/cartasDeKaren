@@ -293,6 +293,8 @@ header {
     background-color: rgba(255, 207, 230, 1);
     padding: 10px 15px;
     margin-top: 10px;
+    text-decoration: none;
+
 }
 
 .button .btn {
@@ -759,6 +761,21 @@ header {
     font-style: normal;
  }
   
+    .btn-pagar{
+        background-color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Raleway';
+        font-weight: 700;
+        color: rgba(227, 23, 38, 1);
+        font-size: 12px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
 .pointer{
     cursor: pointer;
 }
+

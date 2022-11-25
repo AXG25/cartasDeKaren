@@ -60,6 +60,8 @@ const pintarCarrito = () => {
     totalCompra.className = "total-compra";
     totalCompra.innerHTML = `
         <p>Total a pagar: <span>${total} $</span></p>
+        <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=123456789-123456789-123456789-123456789" target="_blank" class="btn-pagar">Pagar <i class="fa-solid fa-arrow-right"></i></a>
+
         `;     
     sideCartContainer.append(totalCompra);
   
