@@ -39,6 +39,18 @@ productos.forEach((producto) => {
  
   // le damos funcionalidad al boton de comprar
   btnComprar.addEventListener("click", () => {
+   // notificacion bonita
+    Toastify({
+      text: "Producto añadido",
+      duration: 3000,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, rgb(255, 203, 228), rgba(227, 23, 38, 1))",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
 
   //funcion que verfica si el producto ya esta en el carrito
   const yaEsta = carrito.some((productoRepetido) => productoRepetido.id === producto.id); 

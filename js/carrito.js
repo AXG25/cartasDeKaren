@@ -68,6 +68,19 @@ const pintarCarrito = () => {
 
     // creamos la funcion para eliminar solo el producto que se le dio click
     function eliminarProducto() {
+
+      Toastify({
+        text: "Producto eliminado",
+        duration: 2000,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, rgb(255, 203, 228), rgba(227, 23, 38, 1))",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
       carrito.splice(i, 1);
       cantidadCarrito();
       guardarCarrito();
