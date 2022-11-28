@@ -51,10 +51,9 @@ const pintarCarrito = () => {
   
  
     // funcion que nos muestra el total de la compra
-    const total = carrito.reduce(
-       (acc, item) => acc + item.precio * item.cantidad,
-      0
-     );
+    const total = (carrito.reduce(
+       (acc, item) => acc + item.precio * item.cantidad,0));
+
 
     let totalCompra = document.createElement("div");
     totalCompra.className = "total-compra";

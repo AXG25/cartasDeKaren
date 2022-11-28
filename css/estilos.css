@@ -23,12 +23,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    max-width: 1263px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 body {
-    width: 100%;
     overflow-x: hidden;
 }
 
@@ -55,7 +54,7 @@ header {
 .logo {
     width: 90%;
     text-align: center;
-    padding-bottom: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,14 +128,14 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    margin-top: 113px;
+    margin-top: 125px;
 }
 
 .navbar a {
     position: relative;
     text-transform: uppercase;
-    padding: 6px 20px;
-    margin: 0 5px;
+    padding: 6px 10px;
+    margin: 0 15px;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Raleway';
@@ -428,13 +427,14 @@ header {
 }
 
 .carrusel {
+    width: 100%;
     display: flex;
     align-items: center;
   }
   
   .carrusel-items {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     padding: 40px 40px;
   }
@@ -575,7 +575,7 @@ header {
 
 .scustoms-collections{
     padding: 40px 0px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
