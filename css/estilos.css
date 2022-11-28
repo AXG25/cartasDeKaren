@@ -434,7 +434,7 @@ header {
   
   .carrusel-items {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     padding: 40px 40px;
   }
@@ -724,7 +724,7 @@ header {
  .producto-sideCart p{
     text-transform: uppercase;
     line-height: 2;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.08em;
     font-family: 'Raleway';
     font-size: 12px;
     font-weight: 400;
