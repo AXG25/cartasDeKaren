@@ -1,3 +1,6 @@
-carrito de compras 100% funcional 
-un formulario 100$ funcional
-boton de chat por wsp 
+boton que me lleva a otra pagina y me permita pagar
+
+formulario para contactar al cliente
+
+diseño completo de las demas paginas
+
