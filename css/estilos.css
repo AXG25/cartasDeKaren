@@ -59,6 +59,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-left: 10%;
+    z-index: 2;
 }
 
 .logo a {
@@ -926,9 +927,74 @@ hr {
     font-style: normal;
 }
 
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 207, 230, 1);
+    padding: 40px;
+}
+
+.faq-title{
+    color: rgba(227,23,38,1);
+    text-transform: lowercase;
+    line-height: 1.4;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Reikna Regular';
+    font-weight: 400;
+}
+
+.faq-text{
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 10px ;
+    text-transform: uppercase;
+}
+
+.faq-text2{
+    line-height: 2;
+    font-size: 12px;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+
+.accordion {
+    width: 90%;
+    --bs-accordion-color: rgba(227,23,38,1) ;
+    --bs-accordion-bg: rgba(255, 207, 230, 1);
+    --bs-accordion-border-color: rgba(227,23,38,1);
+    --bs-accordion-border-width: 0px;
+    --bs-accordion-border-radius: 0rem;
+    --bs-accordion-inner-border-radius: 0rem;
+    --bs-accordion-btn-color: rgba(227,23,38,1);
+    --bs-accordion-btn-icon-width: 0rem;
+    --bs-accordion-active-color: rgba(227,23,38,1);
+    --bs-accordion-active-bg: rgba(255, 207, 230, 1);
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    z-index: 1 !important;
+}
+
+.accordion-item{
+    z-index: 1 !important;
+}
+
+.division{
+    background-color: rgba(227,23,38,1);
+    color: rgba(227,23,38,1);
+    width: 100%;
+    height: 1.5px;
+    
+}
+
 /*mediaqueries*/
 @media (max-width: 950px) {
     .pasos div {
-      width: 100%;
+    width: 100%;
     }
-  }
+}
