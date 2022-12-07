@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nombre": "cumpleaños",
+    "nombre": "birthday",
     "precio": 3000,
     "img": "https://res.cloudinary.com/axiever/image/upload/v1669669671/301819868_875614680076461_109546762853576246_n_a6vi9p.jpg",  
     "cantidad": 1
