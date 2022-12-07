@@ -1,14 +1,17 @@
 const carrusel = document.querySelector(".carrusel-items");
 
 let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
-let intervalo
+console.log(maxScrollLeft);
+let intervalo;
 let step = 1;
+let scrollLeft = 0;
 const start = () => {
-  intervalo = setInterval(function () {
-    carrusel.scrollLeft += step;
-    if (carrusel.scrollLeft == maxScrollLeft) {
+  intervalo = setInterval(() => {
+    scrollLeft += step;
+    carrusel.scrollLeft = scrollLeft;
+    if (scrollLeft === maxScrollLeft) {
       step *= -1;
-    } else if (carrusel.scrollLeft == 0) {
+    } else if (scrollLeft == 0) {
       step *= -1;
     }
   }, 10);
