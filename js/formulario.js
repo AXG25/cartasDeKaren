@@ -13,16 +13,26 @@ const finalizarCompra = (event)=>{
     event.preventDefault();
     if(nombreUsuario.value !== "" && direccionUsuario.value !== ""){
         const whatsappNumber = +573245449563;
-    let mensaje = `Hola, mi nombre es ${nombreUsuario.value}. Me gustaría realizar el siguiente pedido:`;
+    let mensaje = `Hola me llamo ${nombreUsuario.value}.
+    
+    `;
     carrito.forEach((producto) => {
         mensaje += `
-        - ${producto.nombre} x ${producto.cantidad} $${producto.precio * producto.cantidad}
+        Enviame por favor la tarjeta ${producto.nombre}. de esta tarjeta voy a querer ${producto.cantidad} copias. por el valor de $${producto.precio * producto.cantidad}.
+
 
     `;
     });
-    mensaje += `Total: ${total} $`;
-    mensaje += `Envialo a la siguiente dirección: ${direccionUsuario.value}`;
+    
+    mensaje += `Envia esto por favor a la siguiente dirección: ${direccionUsuario.value}
+    
+    
+    `;
+    mensaje += `Segun el carrito el total a pagar es: ${total}$
+    
 
+    
+    el envio tiene algun costo extra?`;
 
 
     window.open(`https://wa.me/${whatsappNumber}?text=${mensaje}`);
